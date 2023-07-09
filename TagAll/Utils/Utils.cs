@@ -30,5 +30,37 @@ namespace TagAll
 
             return null;
         }
+
+        #region Views
+
+        internal static List<View> GetAllViews(Document curDoc)
+        {
+            {
+                FilteredElementCollector m_colviews = new FilteredElementCollector(curDoc);
+                m_colviews.OfCategory(BuiltInCategory.OST_Views);
+
+                List<View> m_views = new List<View>();
+                foreach (View x in m_colviews.ToElements())
+                {
+                    if (x.IsTemplate == false)
+
+                        m_views.Add(x);
+                }
+
+                return m_views;
+            }
+        }
+
+        internal static List<View> GetAllViewsByNameContains(Document curDoc, string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static List<View> GetAllViewsByNameContains(Document curDoc, string v1, string v2)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
     }
 }
