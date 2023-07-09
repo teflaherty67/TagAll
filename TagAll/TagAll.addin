@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command TagAll</Text>
+    <Description>Some description for TagAll</Description>
+    <Assembly>TagAll.dll</Assembly>
+    <FullClassName>TagAll.cmdTagAll</FullClassName>
+    <ClientId>05e3ab3b-4528-436d-a5af-c4029cb506f6</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application TagAll</Name>
+    <Assembly>TagAll.dll</Assembly>
+    <FullClassName>TagAll.App</FullClassName>
+    <ClientId>7aa743bf-a54b-4939-9616-2657f5976338</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+</RevitAddIns>
